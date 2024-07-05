@@ -3,7 +3,7 @@ import os
 print("\n")
 print("ｓａｂｏｒ ｅｘｐｒｅｓｓ\n")
 nome_usuario = input("Qual o seu nome? ")
-print(f'Bem vindo ao nosso restaurante, {nome_usuario}! O que deseja?\n')
+print(f'Bem vindo ao nosso restaurante, {nome_usuario}! O que deseja?')
 
 print("\n")
 
