@@ -7,10 +7,10 @@ nome_usuario = input("Qual o seu nome? ")
 print(f'Bem vindo ao nosso restaurante, {nome_usuario}! O que deseja?')
 
 def exibir_opcoes():
-    print("1. Cadastrar restaurante")
-    print("2. Listar restaurante")
-    print("3. Ativar restaurante")
-    print("4. Sair\n")
+    print("1. Cadastrar restaurante;")
+    print("2. Listar restaurante;")
+    print("3. Ativar restaurante;")
+    print("4. Sair.\n")
 
 def finalizar_app():
     os.system('cls')
