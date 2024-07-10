@@ -8,4 +8,4 @@ elif idade_usuario < 18:
 elif idade_usuario >= 18:
     print(f'{nome_usuario}, você é adulto!')
 else:
-    print('Insira uma idade válida e tente novamente.')
+    print('Tente novamente inserindo uma idade com formato de número, obrigado!')
