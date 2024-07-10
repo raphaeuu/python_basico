@@ -4,7 +4,7 @@ def exibir_nome_programa():
     print("ｓａｂｏｒ ｅｘｐｒｅｓｓ\n")
 
 nome_usuario = input("Qual o seu nome? ")
-print(f'Bem vindo ao nosso restaurante, {nome_usuario}! O que deseja?')
+print(f'Bem vindo ao nosso restaurante, {nome_usuario}! O que deseja?\n')
 
 def exibir_opcoes():
     print("1. Cadastrar restaurante;")
@@ -21,11 +21,11 @@ def escolher_opcao():
     # opcao_escolhida = int(opcao_escolhida)
     
     if opcao_escolhida == 1:
-        print('Cadastrar restaurante')
+        print('Cadastrar restaurante.')
     elif opcao_escolhida == 2:
-        print('Listar restaurantes')
+        print('Listar restaurantes.')
     elif opcao_escolhida == 3:
-        print('Ativar restaurantes')
+        print('Ativar restaurantes.')
     else:
         finalizar_app()
 
