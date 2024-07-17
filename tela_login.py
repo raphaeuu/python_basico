@@ -17,6 +17,6 @@ else:
 if senha_usuario == nova_senha_usuario:
     print('Login efetuado com sucesso!')
     print('Aguarde o carregamento...')
-    print('[■■■■■■■■■□] 99%')
+    print('[■■■■■■■■■□] 99%...')
 else:
     print('Insira uma senha com formato válido.')
