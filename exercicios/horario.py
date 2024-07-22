@@ -20,5 +20,5 @@ try:
         print(f'Boa noite, {nome}!')
     else:
         print(f'{nome}, hora inválida. Digite um valor entre 0 à 23.')
-except ValueError:
+except:
     print('Informe apenas 2 (dois) dígitos.')
