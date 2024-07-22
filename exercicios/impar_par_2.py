@@ -11,8 +11,8 @@ try:
     numero_user = int(input(f'{nome_user}, insira um número: ')) %2
 
     if numero_user == 0:
-        print(f'{nome_user}, seu número é par!')
+        print(f'{nome_user}, o número ({numero_user}) é par!')
     else:
-        print(f'{nome_user}, seu número é ímpar!')
+        print(f'{nome_user}, o número ({numero_user}) é ímpar!')
 except ValueError:
     print('Erro: Tente novamente inserindo um valor de número inteiro.')
