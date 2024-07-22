@@ -14,7 +14,6 @@ while contador <= 100:
         continue
 
     if contador == 40:
-        print(f'Não vou mostrar o {contador}')
         break
 
 print('Acabou!')
