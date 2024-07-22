@@ -7,11 +7,12 @@ Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 
 #Exercício 2
 
-try:
-    nome = input('Me diga o seu nome: ')
-    horario = int(input('Me informe seu horário: '))
 
-    if horario <= 11:
+nome = input('Me diga o seu nome: ')
+horario = int(input('Me informe seu horário: '))
+
+try:
+    if horario >= 0 and horario <= 11:
         print(f'Bom dia, {nome}!')
     elif horario >= 12 and horario <= 17:
         print(f'Boa tarde, {nome}!')
