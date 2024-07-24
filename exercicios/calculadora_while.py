@@ -44,13 +44,13 @@ while True:
 
     print('Realizando a sua conta. Confira o resultado abaixo:\n ')
     if operador == '+':
-        print(num_1_float + num_2_float)
+        print(f'{num_1_float} + {num_2_float} = ', num_1_float + num_2_float)
     elif operador == '-':
-        print(num_1_float - num_2_float)
+        print(f'{num_1_float} - {num_2_float} = ',num_1_float - num_2_float)
     elif operador == '*':
-        print(num_1_float * num_2_float)
+        print(f'{num_1_float} * {num_2_float} = ',num_1_float * num_2_float)
     elif operador == '/':
-        print(num_1_float + num_2_float)
+        print(f'{num_1_float} / {num_2_float} = ',num_1_float + num_2_float)
     else:
         print('Se você chegou aqui, alguma coisa errada aconteceu... 😕 ')
 
