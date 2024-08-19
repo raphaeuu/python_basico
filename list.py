@@ -5,4 +5,6 @@ lista = []
 # print(lista, type(lista))
 
 lista = [123, True, 'Raphael Henrique',1.2, []]
-print(lista[2].upper(), type(lista[2]))
+lista[-3] = 'Maria'
+print(lista)
+print(lista[2], type(lista[2]))
