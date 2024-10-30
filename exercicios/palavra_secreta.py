@@ -19,7 +19,7 @@ while True:
 
     if letra_digitada in palavra_secreta:
         letras_acertadas += letra_digitada
-
+ 
     
     palavra_formada = ''
     for letra_secreta in palavra_secreta:
@@ -35,5 +35,5 @@ while True:
         print(f'{nome_jogador}, você adivinhou! Parabéns!')
         print(f'A palavra secreta é: "{palavra_secreta}".')
         print(f'Você tentou: ({tentativas}x).')
-        
+
         break
