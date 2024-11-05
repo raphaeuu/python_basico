@@ -13,32 +13,31 @@
             const incluirNumeros = document.getElementById('incluir_numeros_senha').checked;
             const incluirSimbolos = document.getElementById('incluir_simbolos_senha').checked;
 
-            try { 
-            const response = await fetch('/criar_conta', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    login: login,
-                    tamanho: tamanho,
-                    incluir_maiusculas_senha: incluirMaiusculas,
-                    incluir_numeros_senha: incluirNumeros,
-                    incluir_simbolos_senha: incluirSimbolos
-                })
-            });
+            try {
+                const response = await fetch('/criar_conta', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        login: login,
+                        tamanho: tamanho,
+                        incluir_maiusculas_senha: incluirMaiusculas,
+                        incluir_numeros_senha: incluirNumeros,
+                        incluir_simbolos_senha: incluirSimbolos
+                    })
+                });
 
-            //Processa a resposta
-            const data = await response.json();
-            document.getElementById('resultado').innerHTML = `
-                <p>Seu login é: ${data.login}<p>
-                <p>Sua senha é: ${data.senha}</p>
-
-            `;
-                } catch (error) {
-                    console.error("Erro ao enviar os dados: ", error);
-                    document.getElementById('resultado').innerHTML = `<p>Erro ao criar a conta. Tente novamente.</p>`;
-                }
+                // Processa a resposta
+                const data = await response.json();
+                document.getElementById('resultado').innerHTML = `
+                    <p>Seu login é: ${data.login}</p>
+                    <p>Sua senha é: ${data.senha}</p>
+                `;
+            } catch (error) {
+                console.error("Erro ao enviar os dados:", error);
+                document.getElementById('resultado').innerHTML = `<p>Erro ao criar a conta. Tente novamente.</p>`;
+            }
         }
     </script>
 </head>
@@ -55,6 +54,12 @@
             <input type="checkbox" id="incluir_maiusculas_senha">
             Incluir letras maiúsculas
         </label><br>
+
+        <label>
+            <input type="checkbox" id="incluir_numeros_senha">
+            Incluir números
+        </label><br>
+
         <label>
             <input type="checkbox" id="incluir_simbolos_senha">
             Incluir símbolos
