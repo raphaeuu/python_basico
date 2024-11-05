@@ -6,12 +6,14 @@
     <title>Criação de Conta</title>
     <script>
         async function criarConta() {
+            // Captura os valores dos campos de entrada
             const login = document.getElementById('login').value;
             const tamanho = parseInt(document.getElementById('tamanho').value);
             const incluirMaiusculas = document.getElementById('incluir_maiusculas_senha').checked;
             const incluirNumeros = document.getElementById('incluir_numeros_senha').checked;
             const incluirSimbolos = document.getElementById('incluir_simbolos_senha').checked;
 
+            try { 
             const response = await fetch('/criar_conta', {
                 method: 'POST',
                 headers: {
@@ -26,12 +28,17 @@
                 })
             });
 
+            //Processa a resposta
             const data = await response.json();
             document.getElementById('resultado').innerHTML = `
                 <p>Seu login é: ${data.login}<p>
                 <p>Sua senha é: ${data.senha}</p>
 
             `;
+                } catch (error) {
+                    console.error("Erro ao enviar os dados: ", error);
+                    document.getElementById('resultado').innerHTML = `<p>Erro ao criar a conta. Tente novamente.</p>`;
+                }
         }
     </script>
 </head>

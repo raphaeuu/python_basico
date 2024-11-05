@@ -9,6 +9,7 @@ def gerar_senha(tamanho, incluir_maiusculas_senha, incluir_numeros_senha, inclui
     caracteres_maiusculos_senha = string.ascii_uppercase if incluir_maiusculas_senha else ""
     numeros = string.digits if incluir_numeros_senha else ""
     simbolos_esp = string.punctuation if incluir_simbolos_senha else ""
+    
     caracteres = caracteres_minusculos_senha + caracteres_maiusculos_senha + numeros + simbolos_esp
 
 
@@ -22,12 +23,12 @@ def home():
 
 @app.route('/criar_conta', methods=['POST'])
 def criar_conta():
-    dados = request.json
-    login = dados['login']
-    tamanho = dados['tamanho']
-    incluir_maiusculas_senha = dados['incluir_maiusculas_senha']
-    incluir_numeros_senha = dados['incluir_numeros_senha']
-    incluir_simbolos_senha = dados['incluir_simbolos_senha']
+    dados = request.get_json()
+    login = dados.get['login']
+    tamanho = int(dados.get('tamanho', 8))
+    incluir_maiusculas_senha = dados.get('incluir_maisculas_senha', False)
+    incluir_numeros_senha = dados.get('incluir_numeros_senha', False)
+    incluir_simbolos_senha = dados.get('incluir_simbolos_senha', False)
 
     senha = gerar_senha(tamanho, incluir_maiusculas_senha, incluir_numeros_senha, incluir_simbolos_senha)
 
