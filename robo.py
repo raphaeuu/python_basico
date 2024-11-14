@@ -47,8 +47,6 @@ def realizar_operacao_aleatoria():
 
     for digito in str(numero2):
         pyautogui.press(digito)
-        
-
         pyautogui.press('enter')
 
     print(f"Operação realizada com sucesso! ({numero1} {operacao} {numero2})")
