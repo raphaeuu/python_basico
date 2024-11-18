@@ -3,12 +3,16 @@ import time
 import subprocess
 import os
 
-def abrir_vscode_com_pyautogui():
-    try:
-        subprocess.Popen("code")
-        time.sleep(3)
-    except Exception as e:
-        print(f"Erro ao abrir o VS Code: {e}")
+# def abrir_vscode_com_pyautogui():
+
+#     try:
+#         pyautogui.press('win')
+#         time.sleep(2)
+
+#         subprocess.Popen('code')
+#         time.sleep(3)
+#     except Exception as e:
+#         print(f"Erro ao abrir o VS Code: {e}")
  
 def criar_arquivo():
     pyautogui.hotkey('ctrl', 'n')
@@ -39,12 +43,12 @@ def abrir_terminal():
         print(f"Erro ao executar o arquivo: {e}")
     
 
-abrir_vscode_com_pyautogui()
-time.sleep(2)
+# abrir_vscode_com_pyautogui()
+time.sleep(1)
 criar_arquivo()
-time.sleep(2)
+time.sleep(1)
 digitar_script()
-time.sleep(2)
+time.sleep(1)
 executar_arquivo()
-time.sleep(2)
+time.sleep(1)
 abrir_terminal()
