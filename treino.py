@@ -22,12 +22,12 @@ def abrir_bloco_notas():
 
 
 def escrever_nome():
-    pyautogui.write('Seja bem vindo, Raphael! Faca sua lista abaixo: ')
+    pyautogui.write('Seja bem vindo, Raphael! Escreva abaixo. ')
     print('Texto inserido.')
     time.sleep(1)
 
 def salvar_arquivo():
-    pyautogui.press('arch')
+    pyautogui.press('archive')
     pyautogui.press('enter')
 
 abrir_Windows()
