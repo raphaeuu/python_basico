@@ -20,6 +20,9 @@
 #     print("Não é número inteiro. Tente novamente!")
 
 
+
+
+
 ### Número 2
 
 # nome_usuario = input("Digite seu nome: ")
@@ -41,6 +44,10 @@
 
 # except ValueError:
 #     print("O formato não é correto. Insira no formato númerico!")
+
+
+
+
 
 
 ### Número 3
