@@ -45,26 +45,26 @@
 
 ### Número 3
 
-nome_usuario = input('Insira seu nome: ')
-contagem_letra = len(nome_usuario)
+# nome_usuario = input('Insira seu nome: ')
+# contagem_letra = len(nome_usuario)
 
 
-try:
-    if contagem_letra <= 4:
-        print(
-            f'({nome_usuario}) | Seu nome é curto e tem {contagem_letra} letras.'
-            )
-    elif contagem_letra == 5 and contagem_letra == 6:
-        print(
-            f'({nome_usuario}) | Seu nome é normal e tem {contagem_letra} letras.'
-            )
-    elif contagem_letra > 6:
-        print(
-            f'({nome_usuario}) | Seu nome é grande e tem {contagem_letra} letras.'
-            )
-    else:
-        print("😱")
+# try:
+#     if contagem_letra <= 4:
+#         print(
+#             f'({nome_usuario}) | Seu nome é curto e tem {contagem_letra} letras.'
+#             )
+#     elif contagem_letra == 5 and contagem_letra == 6:
+#         print(
+#             f'({nome_usuario}) | Seu nome é normal e tem {contagem_letra} letras.'
+#             )
+#     elif contagem_letra > 6:
+#         print(
+#             f'({nome_usuario}) | Seu nome é grande e tem {contagem_letra} letras.'
+#             )
+#     else:
+#         print("😱")
 
-except ValueError:
-    print('Tente novamente inserindo apenas letras.')
+# except ValueError:
+#     print('Tente novamente inserindo apenas letras.')
 
